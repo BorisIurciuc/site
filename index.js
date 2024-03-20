@@ -9,7 +9,7 @@ fetch("https://catfact.ninja/fact")
 })
 
 async function loadingBoredAct() {
-    const responce = await fetch("http://www.boredapi.com/api/activity/");
+    const responce = await fetch("http://www.boredapi.com/api/activity");
     const obj = await responce.json();
     const {activity} = obj;
     getFetchElementBored.textContent = `${activity}`
